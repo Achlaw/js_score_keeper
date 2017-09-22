@@ -1,5 +1,6 @@
 var player1Button = document.querySelector("#player1");
 var player2Button = document.querySelector("#player2");
+var resetButton = document.querySelector("#reset");
 var player1Display = document.querySelector("#player1Display");
 var player2Display = document.querySelector("#player2Display");
 var player1Display2 = document.querySelector("#player1Display2");
@@ -31,4 +32,16 @@ player2Button.addEventListener("click", function(){
       }
       player2Display.textContent = player2Score;
   }
+});
+
+resetButton.addEventListener("click", function(){
+  player1Score = 0;
+  player2Score = 0;
+  player1Display.textContent = 0;
+  player2Display.textContent = 0;
+  player1Display.classList.remove("winner");
+  player1Display2.classList.remove("winner");
+  player2Display.classList.remove("winner");
+  player2Display2.classList.remove("winner");
+  gameOver = false;
 });
