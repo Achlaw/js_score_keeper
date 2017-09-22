@@ -18,6 +18,11 @@ player1Button.addEventListener("click", function(){
 });
 
 player2Button.addEventListener("click", function(){
-  player2Score++;
-  player2Display.textContent = player2Score;
+  if(!gameOver){
+    player2Score++;
+    if(player2Score === winningScore){
+        gameOver = true;
+      }
+      player2Display.textContent = player2Score;
+  }
 });
