@@ -3,6 +3,7 @@ var player2Button = document.querySelector("#player2");
 var player1Display = document.querySelector("#player1Display");
 var player2Display = document.querySelector("#player2Display");
 var player1Display2 = document.querySelector("#player1Display2");
+var player2Display2 = document.querySelector("#player2Display2");
 var player1Score = 0;
 var player2Score = 0;
 var gameOver = false;
@@ -24,6 +25,8 @@ player2Button.addEventListener("click", function(){
   if(!gameOver){
     player2Score++;
     if(player2Score === winningScore){
+        player2Display.classList.add("winner");
+        player2Display2.classList.add("winner");
         gameOver = true;
       }
       player2Display.textContent = player2Score;
