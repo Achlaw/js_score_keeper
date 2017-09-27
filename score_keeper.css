@@ -1,3 +1,30 @@
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 500%;
+  background-color: #AAAAAA;
+  padding: 120px;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+body {
+  background-color: #DDDDDD;
+  margin: 0;
+  font-family: "helvetica";
+}
 .winner {
   color: green;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+#player1Display {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
 }
